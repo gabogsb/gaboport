@@ -37,7 +37,7 @@ changeThemeBtn.addEventListener('change', () => {
 
 });
 
-const func_text = 'Front-End Developer';
+const func_text = 'Front-End';
 
 func_text.split('').forEach((l, index) => {
   setTimeout(() => {
