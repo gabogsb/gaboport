@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --color-dark: #263238;
-  --color-text-dark: #fff;
+	--color-dark: #263238;
+	--color-text-dark: #fff;
 }
-
 
 * {
 	margin: 0;
@@ -16,52 +15,53 @@
 body {
 	font-family: 'JetBrains Mono', sans-serif;
 	width: 100vw;
-  transition: 0.4s;
-  margin: 0 auto;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	transition: 0.4s;
+	margin: 0 auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@keyframes blink {
-  
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }	
-  
+html {
+	scroll-behavior: smooth;
 }
+
+/* @keyframes blink {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+} */
 
 @keyframes floating {
-  0% {
-    transform: translateY(0px) rotate(0)
-  }
-  50% {
-    transform: translateY(-25px) rotate(4deg)
-  }
-  100% {
-    transform: translateY(0px) rotate(0)
-  }
+	0% {
+		transform: translateY(0px) rotate(0);
+	}
+	50% {
+		transform: translateY(-25px) rotate(4deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(0);
+	}
 }
 
 /* Dark Theme */
 .dark,
 .dark header a {
-  background-color: var(--color-dark);
-  color: var(--color-text-dark)
+	background-color: var(--color-dark);
+	color: var(--color-text-dark);
 }
 
 .dark .bi-sun {
-  display: none;
+	display: none;
 }
 
 .dark .bi-moon {
-  display: block;
+	display: block;
 }
-
 
 li {
 	list-style: none;
@@ -73,7 +73,7 @@ a {
 
 header {
 	box-shadow: 0px 3px 30px -8px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .navbar {
@@ -82,7 +82,7 @@ header {
 	align-items: center;
 	height: 4rem;
 	padding: 2rem;
-  width: 100vw;
+	width: 100vw;
 }
 
 .logo {
@@ -117,123 +117,131 @@ header {
 }
 
 .btn__change__theme {
-  position: absolute;
-  right: 5rem;
+	position: absolute;
+	right: 5rem;
 }
 
 #change_theme {
-  display: none;
+	display: none;
 }
 
 .bi {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .bi-moon {
-  display: none;
+	display: none;
 }
 
 .initial {
-  width: 80vw;
-  height: 36rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	width: 80vw;
+	height: 36rem;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .name {
-  font-size: 1.5rem;
-  line-height: 4rem;
-  word-wrap: normal;
+	font-size: 1.5rem;
+	line-height: 4rem;
+	word-wrap: normal;
 }
 
 .name h1 {
-  font-size: 3.4rem;
+	font-size: 3.4rem;
 }
 
 .name h3 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
-.name h3::after {
-  content: '|';
-  animation: blink 1s infinite;
+/* .name h3::after {
+	content: '|';
+	animation: blink 1s infinite;
+} */
+
+.func {
+	display: flex;
+	align-items: center;
+	gap: .7rem;
+}
+
+.func_txt {
+	font-size:	80px;
 }
 
 .eu_desenho {
-  width: 28rem;
+	width: 28rem;
 
-  animation: floating 5s infinite;
+	animation: floating 5s infinite;
 }
 
 .about_me {
-  width: 80vw;
-  margin: auto;
-  padding: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 80vw;
+	margin: auto;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .aboutMe_title {
-  font-size: 2.6rem;
-  padding: 1.4rem;
+	font-size: 2.6rem;
+	padding: 1.4rem;
 }
 
 .divide {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
 .aboutMe_text {
-  max-width: 50%;
+	max-width: 50%;
 }
 
 .techs {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+	justify-content: center;
+	align-items: center;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .tech {
-  width: 16rem;
-  height: 18rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
+	width: 16rem;
+	height: 18rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
 }
 
 .tech__img {
-  width: 6rem;
+	width: 6rem;
 }
 
 .tech__title {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
-
-
 
 @media (max-width: 768px) {
 	.hamburguer {
 		display: block;
-    position: absolute;
-    right: 2rem;
+		position: absolute;
+		right: 2rem;
 	}
 	.hamburguer.active .bar:nth-child(2) {
 		opacity: 0;
@@ -252,7 +260,7 @@ header {
 		flex-direction: column;
 		width: 100%;
 		transition: 0.3s;
-    background-color: var(--color-dark);
+		background-color: var(--color-dark);
 	}
 	.nav__item {
 		margin: 10px 0;
@@ -261,17 +269,16 @@ header {
 		top: 70px;
 	}
 
-    .btn__change__theme {
-      position: absolute;
-      left: 2rem;
-    }
+	.btn__change__theme {
+		position: absolute;
+		left: 2rem;
+	}
 
-  .initial {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10rem;
-    justify-content: center;
-    align-items: center;
-  }
+	.initial {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10rem;
+		justify-content: center;
+		align-items: center;
+	}
 }
-

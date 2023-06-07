@@ -1,11 +1,12 @@
 const hamburguer = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('.nav__menu');
 const changeThemeBtn = document.querySelector('#change_theme')
-const func = document.querySelector('#func');
+const techs = document.querySelector('.techs');
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
+  
 });
 
 function toggleDarkMode() {
@@ -37,11 +38,19 @@ changeThemeBtn.addEventListener('change', () => {
 
 });
 
-const func_text = 'Front-End';
+// const func_text = 'Front-End';
 
-func_text.split('').forEach((l, index) => {
-  setTimeout(() => {
-    func.innerHTML += l;
-  }, 100 * index);
+// func_text.split('').forEach((i, index) => {
+//   setTimeout(() => {
+//     func.innerHTML += i;
+//   }, 100 * index);
+// });
+
+
+var Typed = new Typed('#elements', {
+  strings: ['Front-End', 'Mobile'],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+
 });
-
