@@ -97,9 +97,7 @@ header {
 	gap: 1rem;
 }
 
-.nav__menu a {
-	color: #0f0f0f;
-}
+
 
 .hamburguer {
 	display: none;
@@ -173,7 +171,6 @@ header {
 
 .eu_desenho {
 	width: 28rem;
-
 	animation: floating 5s infinite;
 }
 
@@ -256,12 +253,21 @@ header {
 		position: fixed;
 		top: -100%;
 		text-align: center;
-		background-color: #fafafa;
 		flex-direction: column;
 		width: 100%;
 		transition: 0.3s;
-		background-color: var(--color-dark);
 	}
+
+	.nav__menu a {
+		color: #0f0f0f;
+	}
+
+	.nav__menu__down__mobile {
+		background-color: #fff;
+		color: #0f0f0f;
+	}
+
+
 	.nav__item {
 		margin: 10px 0;
 	}
@@ -279,6 +285,11 @@ header {
 		flex-direction: column;
 		padding-top: 10rem;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.row {
+	    justify-content: center;
 		align-items: center;
 	}
 }

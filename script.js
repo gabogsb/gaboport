@@ -6,12 +6,28 @@ const techs = document.querySelector('.techs');
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
+
+  if (document.body.classList.contains('dark')) {
+    navMenu.classList.remove('nav__menu__down__mobile');
+    navMenu.classList.add('dark')
+  } else {
+    navMenu.classList.add('nav__menu__down__mobile')
+  }
   
+  // if (document.body.classList.contains('light')) {
+  //   navMenu.classList.remove('dark')
+  // } else {
+  //   navMenu.classList.add('nav__menu__down__mobile')
+  // }
+
+
 });
 
 function toggleDarkMode() {
   document.body.classList.toggle('dark');
 }
+
+
 
 
 //Load Theme Settings
@@ -52,5 +68,4 @@ var Typed = new Typed('#elements', {
   typeSpeed: 100,
   backSpeed: 50,
   loop: true,
-
 });
