@@ -165,10 +165,6 @@ header {
 	gap: .7rem;
 }
 
-.func_txt {
-	font-size:	80px;
-}
-
 .eu_desenho {
 	width: 28rem;
 	animation: floating 5s infinite;
@@ -215,8 +211,8 @@ header {
 }
 
 .tech {
-	width: 16rem;
-	height: 18rem;
+	width: 14rem;
+	height: 16rem;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 2rem;
 	display: flex;
@@ -227,7 +223,7 @@ header {
 }
 
 .tech__img {
-	width: 6rem;
+	width: 5rem;
 }
 
 .tech__title {
